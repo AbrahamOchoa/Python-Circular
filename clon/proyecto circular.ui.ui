@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SplashScrenn</class>
+ <widget class="QMainWindow" name="SplashScrenn">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="CircularProgressBarBase">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>320</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="CircularProgress">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+
+   
+   border-radius: 150px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(85, 255, 127, 0), stop:0.750 rgba(85, 170, 255, 255));
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="circularBg">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+border-radius: 150px;
+background-color: rgba(183, 170, 255, 100);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="Container">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>25</y>
+       <width>270</width>
+       <height>270</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+
+   border-radius: 135px; 
+	background-color: rgb(85, 85, 127);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>161</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">brackground-color: none;
+color: #FFFFFF;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#a9a9fc;&quot;&gt;Your &lt;/span&gt;Aplication Name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+           <pointsize>60</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">brackground-color: none;
+color: #FFFFFF;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-size:48pt; vertical-align:super;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelCredis">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+ border-radius: 30px;
+ background-color: rgb(109, 109, 162);
+ color: #FFFFFF;
+ margin-left: 40px;
+ margin-right:40px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">brackground-color: none;
+color: rgb(155, 155, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>by: Wanderson M. Pimea</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <zorder>circularBg</zorder>
+    <zorder>CircularProgress</zorder>
+    <zorder>Container</zorder>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
